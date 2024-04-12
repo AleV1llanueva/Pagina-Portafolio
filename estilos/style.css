@@ -40,7 +40,7 @@ header {
 
 .elem-options:hover {
     transition: 0.3s;
-    border-bottom: 3px solid #9AD4D6;
+    border-bottom: 3px solid #4E3F78;
 }
 
 #home {
@@ -62,7 +62,9 @@ header {
 .title-home {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    color: #DBCBD8;
+    color: #C4ABC0;
+    font-size: 30px;
+    margin: 0;
 }
 
 .img-home {
@@ -80,19 +82,31 @@ header {
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     grid-template-areas:
      'tec1 tec2 tec3'
      'tec4 tec5 tec6'
      '. tec7 .';
 }
 
-.img-tec {
-    font-size: 40px;
+.elem-tec {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
 }
 
-.elem-tec {
-    font-size: 12px;
+.img-tec {
+    margin: auto;
+}
+
+.img-tec>i {
+    font-size: 100px;
+}
+
+.desc-tec {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 .tec1 {
