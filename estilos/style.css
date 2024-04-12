@@ -1,0 +1,119 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    color: white;
+    background-color: #101935;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem-header {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    width: 60vw;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+}
+
+.elem-options:hover {
+    transition: 0.3s;
+    border-bottom: 3px solid #9AD4D6;
+}
+
+#home {
+    display: flex;
+    margin: 20px 0 ;
+    justify-content: center;
+    height: 50vh;
+    gap: 30px;
+}
+
+.text-home {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.title-home {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: #DBCBD8;
+}
+
+.img-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    font-size: 40px;
+}
+
+#tecnologies {
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+     'tec1 tec2 tec3'
+     'tec4 tec5 tec6'
+     '. tec7 .';
+}
+
+.img-tec {
+    font-size: 40px;
+}
+
+.elem-tec {
+    font-size: 12px;
+}
+
+.tec1 {
+    grid-area: tec1;
+}
+.tec2 {
+    grid-area: tec2;
+}
+.tec3 {
+    grid-area: tec3;
+}
+.tec4 {
+    grid-area: tec4;
+}
+.tec5 {
+    grid-area: tec5;
+}
+.tec6 {
+    grid-area: tec6;
+}
+.tec7 {
+    grid-area: tec7;
+}
+
