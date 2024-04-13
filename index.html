@@ -7,57 +7,82 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
-        <div class="elem-header">Logo</div>
-        <div class="elem-header options">
+        <div class="elem-header options h-12 flex justify-center items-center gap-20">
             <div class="elem-options">Home</div>
-            <div class="elem-options">Tecnologies</div>
-            <div class="elem-options">Projects</div>
-            <div class="elem-options">Contact</div>
+            <div class="elem-options">Tecnologías</div>
+            <div class="elem-options">Proyectos</div>
+            <div class="elem-options">Contacto</div>
         </div>
     </header>
-    <section id="home">
-        <div class="text-home">
-            <h1 class="title-home">Web Developer</h1>
+    <section id="home" class="flex justify-around flex-wrap w-5/6 mt-8 m-auto gap-20">
+        <div class="text-home w-4/5 sm:w-2/5 ">
+            <h1 class="title-home font-semibold text-[#06D6A0] mb-3 text-3xl">Web Developer</h1>
             <p class="desc-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nesciunt aperiam omnis facilis odit quos, reprehenderit dolorem cum beatae inventore delectus pariatur culpa hic nisi, minima asperiores. Corrupti, provident earum.</p>
         </div>
-        <div class="img-home">image</div>
+        <div class="img-home w-40 sm:w-2/5  "><img src="https://th.bing.com/th/id/OIP.uyRdUuO5GuodTPrS0CCoRwHaHa?rs=1&pid=ImgDetMain" alt=""></div>
     </section>
-    <section id="tecnologies">
-        <div class="elem-tec tec1">
-            <div class="img-tec"><i class="fa-brands fa-html5 fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">HTML</div>
+    <section id="tecnologies" class="w-5/6 flex justify-around m-auto mt-12 gap-12 flex-wrap">
+        <div class="title-tec w-full text-2xl text-center font-semibold text-[#FFD166]">Tecnologías</div>
+        <div class="elem-tec w-32 h-52">
+            <img src="recursos/iconos/html5.svg" alt="">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold">HTML</div>
         </div>
-        <div class="elem-tec tec2">
-            <div class="img-tec"><i class="fa-brands fa-css3-alt fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">CSS</div>
+        <div class="elem-tec w-32 h-52">
+            <img src="recursos/iconos/css3-alt.svg" alt="">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold">CSS</div>
         </div>
-        <div class="elem-tec tec3">
-            <div class="img-tec"><i class="fa-brands fa-js fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">Javascript</div>
+        <div class="elem-tec w-32 h-52">
+            <img  src="recursos/iconos/js.svg" alt="">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold mt-7">Javascript</div>
         </div>
-        <div class="elem-tec tec4">
-            <div class="img-tec"><i class="fa-brands fa-react fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">React</div>
+        <div class="elem-tec w-32 h-52">
+            <img class="h-32"  src="recursos/iconos/react.svg" alt="">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold">React</div>
         </div>
-        <div class="elem-tec tec5">
-            <div class="img-tec"><i class="fa-brands fa-bootstrap fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">Bootstrap</div>
+        <div class="elem-tec w-32 h-52 ">
+            <img class="h-32" src="recursos/iconos/bootstrap.svg" alt="">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold">Bootstrap</div>
         </div>
-        <div class="elem-tec tec6">
-            <div class="img-tec"><i class="fa-solid fa-wind fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">Tailwind</div>
-        </div>
-        <div class="elem-tec tec7">
-            <div class="img-tec"><i class="fa-brands fa-node-js fa-2xl" style="color: #f2fdff;"></i></div>
-            <div class="desc-tec">Node JS</div>
+        <div class="elem-tec w-32 h-52">
+            <img class="h-32"  src="recursos/iconos/tailwind-icon-original.svg" alt="" class="w-full">
+            <div class="desc-tec text-xl text-center mt-2 font-semibold">Tailwind</div>
         </div>
     </section>
+    <section id="proyectos">
+        <div class="elem-proy header-proy">Proyectos</div>
+        <div class="elem-proy">
+            <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div class="title-proy">Lorem impsum</div>
+            <div class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
+        </div>
+        <div class="elem-proy">
+            <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div class="title-proy">Lorem impsum</div>
+            <div class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam, fugit corporis culpa debitis facere quisquam aspernatur? Debitis expedita doloribus facilis autem fuga ipsa. Sapiente deleniti sint recusandae reiciendis nihil.</div>
+        </div>
+        <div class="elem-proy">
+            <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div class="title-proy">Lorem impsum</div>
+            <div class="desc-proy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestias tempora corrupti tenetur? Libero odit laborum atque fugit doloribus, rerum voluptatibus alias assumenda odio ea omnis veritatis, quod earum non?</div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="elem-cont">
+            <img src="recursos/iconos/facebook.svg" alt="">
+        </div>
+        <div class="elem-cont">
+            <img src="recursos/iconos/instagram.svg" alt="">
+        </div>
+        <div class="elem-cont">
+            <img src="recursos/iconos/envelope-solid.svg" alt="">
+        </div>
+    </footer>
 
-    <script src="https://kit.fontawesome.com/b4ad9daf0d.js" crossorigin="anonymous"></script>
     <script src="src/script.js"></script>
 </body>
 </html>
