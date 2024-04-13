@@ -12,19 +12,20 @@
 </head>
 <body>
     <header>
-        <div class="elem-header options h-12 flex justify-center items-center gap-20">
+        <div class="hidden md:flex elem-header options h-12 justify-center items-center gap-20">
             <div class="elem-options">Home</div>
             <div class="elem-options">Tecnologías</div>
             <div class="elem-options">Proyectos</div>
             <div class="elem-options">Contacto</div>
         </div>
+        <img class="sticky md:hidden w-6 top-5 left-5" src="recursos/iconos/hamburger.svg" alt="">
     </header>
-    <section id="home" class="flex justify-around flex-wrap w-5/6 mt-8 m-auto gap-20">
+    <section id="home" class="flex justify-center items-center flex-wrap w-full p-12 gap-20 bg-[#17364F]">
         <div class="text-home w-4/5 sm:w-2/5 ">
             <h1 class="title-home font-semibold text-[#06D6A0] mb-3 text-3xl">Web Developer</h1>
             <p class="desc-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nesciunt aperiam omnis facilis odit quos, reprehenderit dolorem cum beatae inventore delectus pariatur culpa hic nisi, minima asperiores. Corrupti, provident earum.</p>
         </div>
-        <div class="img-home w-40 sm:w-2/5  "><img src="https://th.bing.com/th/id/OIP.uyRdUuO5GuodTPrS0CCoRwHaHa?rs=1&pid=ImgDetMain" alt=""></div>
+        <div class="img-home w-40 sm:w-2/6 "><img src="https://th.bing.com/th/id/OIP.uyRdUuO5GuodTPrS0CCoRwHaHa?rs=1&pid=ImgDetMain" alt=""></div>
     </section>
     <section id="tecnologies" class="w-5/6 flex justify-around m-auto mt-12 gap-12 flex-wrap">
         <div class="title-tec w-full text-2xl text-center font-semibold text-[#FFD166]">Tecnologías</div>
@@ -53,32 +54,32 @@
             <div class="desc-tec text-xl text-center mt-2 font-semibold">Tailwind</div>
         </div>
     </section>
-    <section id="proyectos">
-        <div class="elem-proy header-proy">Proyectos</div>
-        <div class="elem-proy">
+    <section id="proyectos" class="flex flex-wrap justify-center items-center gap-12">
+        <div class="elem-proy header-proy w-full text-center font-semibold text-2xl mb-8 text-[#FFD166]">Proyectos</div>
+        <div class="elem-proy w-64">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy">Lorem impsum</div>
-            <div class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
+            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
+            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
         </div>
-        <div class="elem-proy">
+        <div class="elem-proy w-64">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy">Lorem impsum</div>
-            <div class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam, fugit corporis culpa debitis facere quisquam aspernatur? Debitis expedita doloribus facilis autem fuga ipsa. Sapiente deleniti sint recusandae reiciendis nihil.</div>
+            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
+            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
         </div>
-        <div class="elem-proy">
+        <div class="elem-proy w-64">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy">Lorem impsum</div>
-            <div class="desc-proy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestias tempora corrupti tenetur? Libero odit laborum atque fugit doloribus, rerum voluptatibus alias assumenda odio ea omnis veritatis, quod earum non?</div>
+            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
+            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
         </div>
     </section>
-    <footer id="contact">
-        <div class="elem-cont">
+    <footer id="contact" class=" flex justify-center gap-12 h-20 items-center mt-12 bg-[#17364F]">
+        <div class="elem-cont w-12">
             <img src="recursos/iconos/facebook.svg" alt="">
         </div>
-        <div class="elem-cont">
-            <img src="recursos/iconos/instagram.svg" alt="">
+        <div class="elem-cont w-12">
+            <img class="w-full" src="recursos/iconos/instagram sin error.svg" alt="">
         </div>
-        <div class="elem-cont">
+        <div class="elem-cont w-12">
             <img src="recursos/iconos/envelope-solid.svg" alt="">
         </div>
     </footer>
