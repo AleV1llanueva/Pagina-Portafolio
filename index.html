@@ -12,26 +12,25 @@
 </head>
 <body>
     <header>
-        <div class="hidden md:flex elem-header options h-12 justify-center items-center gap-20">
-            <div class="elem-options">Home</div>
-            <div class="elem-options">Tecnologías</div>
-            <div class="elem-options">Proyectos</div>
-            <div class="elem-options">Contacto</div>
+        <div class="hidden md:flex inset-x-0 top-0 elem-header options fixed h-12 justify-center items-center gap-20 bg-[#19334D]">
+            <div class="elem-options flex flex-row gap-3"><img class="w-6 " src="recursos/iconos/house-solid.svg" alt="">Home</div>
+            <div class="elem-options flex flex-row gap-3"><img class="w-6" src="recursos/iconos/microchip-solid.svg" alt="">Tecnologías</div>
+            <div class="elem-options flex flex-row gap-3"><img class="w-6" src="recursos/iconos/bars-progress-solid.svg" alt="">Proyectos</div>
+            <div class="elem-options flex flex-row gap-3"><img class="w-4" src="recursos/iconos/id-badge-solid.svg" alt="">Contacto</div>
         </div>
-        <img id="burguer-butt" class="hidden md:hidden w-9 top-5 left-5 cursor-pointer" src="recursos/iconos/hamburger.svg" alt="">
-        <div class="fixed flex bg-blue-800 flex flex-col w-1/2 h-screen items-center justify-around">
-            <div class="elem-options">Home</div>
-            <div class="elem-options">Tecnologías</div>
-            <div class="elem-options">Proyectos</div>
-            <div class="elem-options">Contacto</div>
+        <div id="slide-menu" class="hidden p-2 md:hidden flex bg-[#0F1F2E] bottom-10 rounded-3xl justify-around" style="left: 15%; right: 15%;">
+            <a href="#home"><div class="elem-options"><img src="recursos/iconos/house-solid.svg" alt="" class="w-10"></div></a>
+            <div class="elem-options"><img src="recursos/iconos/microchip-solid.svg" alt="" class="w-10"></div>
+            <div class="elem-options"><img src="recursos/iconos/bars-progress-solid.svg" alt="" class="w-10"></div>
+            <div class="elem-options"><img src="recursos/iconos/id-badge-solid.svg" alt="" class="h-10"></div>
         </div>
     </header> 
-    <section id="home" class="flex justify-center items-center flex-wrap w-full p-12 gap-20 bg-[#17364F]">
+    <section id="home" class="flex justify-center items-center flex-wrap w-full p-12 gap-12 sm:gap-32 bg-[#0F1F2E] sm:h-screen">
         <div class="text-home w-4/5 sm:w-2/5 ">
-            <h1 class="title-home font-semibold text-[#06D6A0] mb-3 text-3xl">Web Developer</h1>
-            <p class="desc-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nesciunt aperiam omnis facilis odit quos, reprehenderit dolorem cum beatae inventore delectus pariatur culpa hic nisi, minima asperiores. Corrupti, provident earum.</p>
+            <h1 class="title-home font-semibold text-[#06D6A0] mb-3 text-5xl">Alejandro Villanueva<br><span class="text-[#FFD166]">Desarrollador Web</span> </h1>
+            <p class="desc-home text-3xl">Hola, soy un <span class="font-semibold text-[#84AFD7]">estudiante de UNAH</span> de la carrera de Ingeniería en Sistemas</p>
         </div>
-        <div class="img-home w-40 sm:w-2/6 "><img src="https://th.bing.com/th/id/OIP.uyRdUuO5GuodTPrS0CCoRwHaHa?rs=1&pid=ImgDetMain" alt=""></div>
+        <div class="img-home w-64 sm:w-1/6 rounded-full"><img src="recursos/perfil.jpg" alt="" class="rounded-full"></div>
     </section>
     <section id="tecnologies" class="w-5/6 flex justify-around m-auto mt-12 gap-12 flex-wrap">
         <div class="title-tec w-full text-2xl text-center font-semibold text-[#FFD166]">Tecnologías</div>
@@ -62,20 +61,20 @@
     </section>
     <section id="proyectos" class="flex flex-wrap justify-center items-center gap-12">
         <div class="elem-proy header-proy w-full text-center font-semibold text-2xl mb-8 text-[#FFD166]">Proyectos</div>
-        <div class="elem-proy w-64">
+        <div class="elem-proy w-64 cursor-pointer">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
-            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
+            <div class="title-proy font-semibold text-lg">Calculadora Funcional</div>
+            <div class="desc-proy text-sm">Una calculadora simple que funciona a traves de botones táctiles, que puede hacerlas operaciones básicas.</div>
         </div>
-        <div class="elem-proy w-64">
+        <div class="elem-proy w-64 cursor-pointer">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
-            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
+            <div class="title-proy font-semibold text-lg">App de Clima</div>
+            <div class="desc-proy text-sm">Una página que esta conectada a una API, y que obtiene los datos sobre el clima de un lugar.</div>
         </div>
-        <div class="elem-proy w-64">
+        <div class="elem-proy w-64 cursor-pointer">
             <div class="img-proy"><img src="https://th.bing.com/th/id/R.cdbba6c82c6a6f95d8ce77ec28291159?rik=eNwZ%2fTx61ozfag&riu=http%3a%2f%2farchives.bulbagarden.net%2fmedia%2fupload%2fd%2fdd%2fBoulder_Badge.png&ehk=toPkS1hgaNXVNB3O66%2fe1Wp7hIvPAl1VS2AJDWCSW10%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
-            <div class="title-proy font-semibold text-lg">Lorem impsum</div>
-            <div class="desc-proy text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio laudantium, vitae ea corrupti consequatur, illo nemo tenetur sit itaque, fugit dignissimos quia aut. Quasi aliquam saepe velit ratione iusto!</div>
+            <div class="title-proy font-semibold text-lg">Replica de Nike</div>
+            <div class="desc-proy text-sm">Una página que replica los estilos de la página principal de Nike.</div>
         </div>
     </section>
     <footer id="contact" class=" flex justify-center gap-12 h-20 items-center mt-12 bg-[#17364F]">
