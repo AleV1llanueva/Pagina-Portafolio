@@ -3,7 +3,7 @@ let clima = document.querySelector('#clima-proy');
 let copiaNike = document.querySelector('#copia-proy');
 let instagram = document.querySelector('#instagram');
 let github = document.querySelector('#github');
-let correo = document.querySelector('#correo';)
+let correo = document.querySelector('#correo');
 
 calculadora.addEventListener('click', (e)=>{
     window.open('https://alev1llanueva.github.io/Calculadora-vs1/', '_blank')

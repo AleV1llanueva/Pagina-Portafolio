@@ -11,14 +11,26 @@ body {
 header {
     position: fixed;
     display: flex;
-    height: 40px;
+    height: 60px;
     font-size: 20px;
     font-weight: 600;
-    justify-content: space-around;
-    top: 10px;
-    left: 20%;
-    right: 20%;
-    border-bottom: 2px solid #06D6A0;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    background-color: #FFFCF9;
+    color: #0F1F2E;
+    border-radius: 60px;
+}
+
+.elem-header {
+    transition: 0.2s ease-in-out;
+}
+
+.elem-header:hover {
+    color: #06D6A0;
 }
 
 #presentation {
@@ -94,7 +106,9 @@ header {
 }
 
 .elem-tec:hover {
-    box-shadow: 0px 0px 15px #9bceff;
+    border-right: 4px solid #92e4ff;
+    border-bottom: 4px solid #92e4ff;
+    scale: 1.1;
 }
 
 .title-init-tec {
@@ -102,6 +116,7 @@ header {
     font-size: 38px;
     font-weight: 600;
     text-align: center;
+    color: #FFD166;
 }
 
 .svg-tec {
@@ -163,6 +178,7 @@ header {
     font-weight: 600;
     width: 100vw;
     text-align: center;
+    color: #FFD166;
 }
 
 .title-proy {
