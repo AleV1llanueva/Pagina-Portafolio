@@ -5,4 +5,186 @@ body {
     background-color: #0A151F;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-around;
+    top: 10px;
+    left: 20%;
+    right: 20%;
+    border-bottom: 2px solid #06D6A0;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 100vh;
+    gap: 60px
+}
+
+.elem-prest {
+    width: 30%;
+}
+
+.text-prest {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+}
+
+.title-prest {
+    padding: 0;
+    font-size: 48px;
+    font-weight: 600;
+    width: 100%;
+    color: #F47C98;
+}
+
+.title-prest > span {
+    color: #FFD166;
+}
+
+.desc-prest {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.desc-prest > span {
+    color: #84AFD7;
+}
+
+.img-prest {
+    border-radius: 100%;
+}
+
+#tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    gap: 80px;
+}
+
+.title-tec {
+    text-align: center;s
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.elem-tec {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.elem-tec:hover {
+    box-shadow: 0px 0px 15px #9bceff;
+}
+
+.title-init-tec {
+    width: 60vw;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.svg-tec {
+    height: 160px;
+    fill: #659BCD;
+    transition: 0.2s ease-in-out;
+}
+
+.html-svg:hover {
+    fill: #e87142;
+}
+
+.css-svg:hover {
+    fill: #517cf1;
+}
+
+.javascript-svg:hover {
+    fill: #fff51a;
+}
+
+.react-svg:hover {
+    fill: #92e4ff;
+}
+
+.tailwind-svg:hover {
+    fill: #96d8f6;
+}
+
+.bootstrap-svg:hover {
+    fill: #945fd7;
+}
+
+.tailwind-svg {
+    width: 150px;
+    margin-left: -23px;
+}
+
+#proyectos {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elem-proy {
+    width: 480px;
+    cursor: pointer;
+}
+
+.elem-proy > img {
+    border-radius: 30px;
+}
+
+.title-init-proy {
+    font-size: 38px;
+    font-weight: 600;
+    width: 100vw;
+    text-align: center;
+}
+
+.title-proy {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.desc-proy {
+    font-size: 16px;
+}
+
+#contacto {
+    width: 300px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.svg-cont {
+    width: 60px;
+    fill: #659BCD;
 }
